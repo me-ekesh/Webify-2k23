@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250;
+  background-color: aliceblue;
+  padding: 30px;
+}
+
+.sidebar .navigation ul{
+  list-style: none;
+  margin-top: 30px;
+}
+
+.sidebar .navigation ul li{
+  padding: 10px 5px;
+}
+
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus {
+  color: #000000
+}
