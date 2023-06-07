@@ -167,13 +167,65 @@
   width: 420px; 
   height: 60px; 
   border-radius: 25px;
-  background-color: #f2eeee;
+  background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(4px) saturate(180%);
+  backdrop-filter: blur(25px) saturate(180%);
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 5px;
 }
 
+.slider {
+  width: 68%;
+  height: 12px;
+  background-color: transparent;
+  position: relative;
+  top: -25%;
+  transform: translateY(50%);
+}
 
+.slider input[type="range"] {
+  width: 100%;
+  align-self: center;
+  height: 2px;
+  background-color: transparent;
+  appearance: none;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  top: -4px;
+  z-index: 1;
+}
+
+.slider input[type="range"]::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  top: -4px;
+  z-index: 1;
+}
+
+.slider input[type="range"]::-webkit-slider-runnable-track {
+  height: 2px;
+  background-color: lightgray;
+}
+
+.slider input[type="range"]::-moz-range-track {
+  height: 2px;
+  background-color: lightgray;
+}
+
+.slider input[type="range"]::-moz-range-progress {
+  height: 2px;
+  background-color: black;
+}
