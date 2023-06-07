@@ -1,3 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* .main{
+  width: 100%;
+  background: url(hero-1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+} */
+.navbar{
+  width: 1300px;
+  height: 75px;
+  /* margin: auto; */
+  background-color: #100028;
+  /* background-image:url("./img/hero/hero-1.jpg") ;
+  background-size: cover; */
+
+}
+.icon{
+  width: 250px;
+  float: left;
+  height: 70px;
+  /* margin-top: 25px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
+  width: 400px;
+  float: left;
+  height: 70px;
+}
+
+ul{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li{
+  list-style: none;
+  position: relative;
+  margin-left: 62px;
+  margin-top: 30px;
+  font-size: 15px;
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight:500;
+  transition: 0.4s ease-in-out;
+}
+ul li a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color:aqua;
+  margin: auto;
+  display: block;
+}
+ul li a:hover::after{
+  width: 100%;
+  transition: width 0.1s linear;
+}
+ul li.active a::after{
+  width: 100%;
+  transition: width 0.1s linear;
+}
+
+.menu ul li ul{
+  display:none;
+  position:absolute;
+  background-color:darkblue;
+  border-radius: 0px 0px 5px 5px;
+}
+.menu ul li:hover ul{
+  display: block;
+}
+.menu ul li ul li{
+  line-height: 2;
+  width: 100px;
+  margin:auto;
+  margin-left: 10px;
+}
+.menu ul li ul li a:hover{
+  color: aqua;
+}
+
+.socialtop {
+  width: 150px;
+  float: right;
+  margin-right: 62px;
+  margin-top: 27px;
+}   
+.socialtop a i{
+  color: #fff;
+  font-size: 15px;
+  padding-left: 14px;
+  padding-top: 5px;
+  transition: 0.3s ease;
+}
+.socialtop a i:hover{
+  color: aqua;
+}
+
+
+/* hero section */
 .hero-main-image{
     display: flex;
     width: 100%;
@@ -117,3 +228,38 @@
 }
 
 
+/* team section*/
+.background{
+  width: 100%;
+  background:url(./img/team-bg.jpg);
+  background-position: center; 
+  background-size: cover; 
+  height: 100vh; 
+}
+.container{
+  width: 100%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.box1{
+  width: 17rem;
+  margin: 0 10px;
+  margin-top: 15rem;
+}
+.box2{
+  width: 17rem;
+  margin: 0 10px;
+  margin-top: 12rem;
+}
+.box3{
+  width: 17rem;
+  margin: 0 10px;
+  margin-top: 9rem;
+}
+.box4{
+  width: 17rem;
+  margin: 0 10px;
+  margin-top: 6rem;
+}
