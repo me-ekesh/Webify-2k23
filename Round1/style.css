@@ -160,7 +160,14 @@ ul li.active a::after{
     color: #ffff;
     width: 33%;
 }
-
+/*image collage*/
+.image-collages
+{
+   width: 100%;
+    height: 100vh;
+    background-color: #100028;
+    display: flex;
+}
 .grid{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -262,4 +269,83 @@ ul li.active a::after{
   width: 17rem;
   margin: 0 10px;
   margin-top: 6rem;
+}
+.blog-container
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #100028;
+    display: flex;
+}
+.blog-text{
+  width: 100%;
+  text-align: center;
+  padding: 6%;
+  
+}
+.blog-text span{
+    color: #ffffff;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.bar hr{
+  width:70px;
+  height:5px;
+  background-color: #03BFE7;
+  border-style:none;
+
+}
+
+.blog-text h2{
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 7%;
+}
+.ideas-background{
+  width: 100%;
+  background:url(./img/callto-bg.jpg);
+  background-position: center; 
+  height: 55vh; 
+}
+.ideas-container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.ideas-text{
+  padding-top: 7%;
+  padding-left: 8%;
+  
+}
+.ideas-text h2{
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 55px;
+    margin-bottom: 22px;
+}
+.ideas-text p{
+    font-size: 15px;
+    color: #ffffff;
+    opacity: 0.7;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+    
+}
+.ideas-text a {
+    color: #ffffff;
+    background: #00bfe7;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Play", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 14px 32px 12px;
 }
