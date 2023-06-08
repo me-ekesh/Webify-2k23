@@ -46,12 +46,36 @@
     height: 100vh;
     background-color: #100028;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .services-sub-container{
     color: #ffff;
-    width: 33%;
+    width: 30%;
+    height: 75%;
+    display: flex;
 }
+
+.services-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-1{
+    height: 50vh;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-1 img{
+  padding: 1rem;
+}
+
 
 .grid{
   display: grid;
