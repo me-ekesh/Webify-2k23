@@ -27,23 +27,23 @@
   align-items: center;
 }
 
-ul{
+.elements{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-ul li{
+.elements li{
   list-style: none;
   position: relative;
   margin-left: 6rem;
 }
-ul li a{
+.elements li a{
   text-decoration: none;
   color: #fff;
   font-weight:500;
   transition: 0.4s ease-in-out;
 }
-ul li a::after{
+.elements li a::after{
   content: '';
   width: 0;
   height: 0.1rem;
@@ -51,11 +51,11 @@ ul li a::after{
   margin: auto;
   display: block;
 }
-ul li a:hover::after{
+.elements li a:hover::after{
   width: 100%;
   transition: width 0.1s linear;
 }
-ul li.active a::after{
+.elements li.active a::after{
   width: 100%;
   transition: width 0.1s linear;
 }
