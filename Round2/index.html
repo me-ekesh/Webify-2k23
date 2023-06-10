@@ -12,32 +12,121 @@
   <div class="container">
     <div class="side-nav">
       <a href="#" class="logo">
-        <img src="logo.png" alt="logo" class="logo-img">
+        <img src="Images/music.png" alt="logo" class="logo-img">
       </a>
       <ul class="nav-links">
-        <li><a href="#"><p>Home</p></a></li>
-        <li><a href="#"><p>Trends</p></a></li>
-        <li><a href="#"><p>Feed</p></a></li>
-        <li><a href="#"><p>New and Notable</p></a></li>
-        <li><a href="#"><p>Release Calendar</p></a></li>
-        <li><a href="#"><p>Events</p></a></li>
-        <li><a href="#"><p>FavoriteSongs</p></a></li>
-        <li><a href="#"><p>Artist</p></a></li>
-        <li><a href="#"><p>Album</p></a></li>
+        <li><a href="#"><p><img src="Images/home.png">&nbsp;&nbsp;&nbsp; Home</p></a></li>
+        <li><a href="#"><p><img src="Images/trending.png"> &nbsp;&nbsp;&nbsp;Trends</p></a></li>
+        <li><a href="#"><p><img src="Images/web-content.png"> &nbsp;&nbsp;&nbsp;Feed</p></a></li>
+        <li><a href="#"><p><img src="Images/apps.png"> &nbsp;&nbsp;&nbsp;New and Notable</p></a></li>
+        <li><a href="#"><p><img src="Images/calendar.png"> &nbsp;&nbsp;&nbsp;Release Calendar</p></a></li>
+        <li><a href="#"><p><img src="Images/event.png"> &nbsp;&nbsp;&nbsp;Events</p></a></li>
+        <li><a href="#"><p><img src="Images/love.png"> &nbsp;&nbsp;&nbsp;FavoriteSongs</p></a></li>
+        <li><a href="#"><p><img src="Images/multiple-users-silhouette.png"> &nbsp;&nbsp;&nbsp;Artist</p></a></li>
+        <li><a href="#"><p><img src="Images/star.png"> &nbsp;&nbsp;&nbsp;Album</p></a></li>
         <div class="active"></div>
       </ul>
     </div>
+
+    <div class="navig">
+      <button class="arrow-button" id="left-arrow"><img src="left-arrow.png"></button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="arrow-button" id="left-arrow"><img src="left-arrow.png"></button>
+    </div>
+
     <div class="search-bar">
-      <form action="">
+      <form action="" class="search-bar-input">
         <button type=""><img src="Images/search.png"></button>
-        <input type="text" placeholder="search Music / Artist">
+        <input type="text" placeholder="Search Music or Artist..">
       </form>  
+    </div> 
+
+    <div class="text1">
+      <p class="line1">.What's Hot 🔥</p>
+      <p class="line2">Trending</p>
     </div>
+
+    <div class="text2">
+      <p> My Playlist</p>
+    </div>
+
+    <div class="cover">
+      <div class="image-container">
+        <img src="Images/middle2.png" alt="Cover Image" class="cover-image">
+        <div class="gradient-overlay"></div>
+      </div>  
+    </div>
+
+    <div class="cover-text-1">
+      <p> Artist</p>
+    </div>
+
+    <div class="cover-text-2">
+      <p> On Top<br> Of The World</p>
+    </div>
+
+    <table class="invisible-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Title</th>
+          <th>Artist</th>
+          <th>Time</th>
+          <th>Album</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>Lonely</td>
+          <td>Akon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          <td>3:46</td>
+          <td>Trouble</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>Pasoori</td>
+          <td>Shae Gill</td>
+          <td>3:44</td>
+          <td>Albumx</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>Bones</td>
+          <td>I.Dragons</td>
+          <td>2:45</td>
+          <td>Mercury</td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>Mockingbird</td>
+          <td>Eminem</td>
+          <td>4:10</td>
+          <td>Encore</td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td>The Nights</td>
+          <td>Avicii</td>
+          <td>2:30</td>
+          <td>The Day</td>
+        </tr>
+      </tbody>
+    </table>    
+
     <div class="music-controls">
-      <div class="slider">
-        <input type="range" value="0" min="0" max="300" step="1" class="seek-bar">
+      <div class="media-buttons">
+        <button class="rewind-button media-button" label="rewind"></button>
+        <button class="play-button media-button" label="play"></button>
+        <button class="fast-forward-button media-button" label="fast forward"></button>
+        <button class="Repeat media-button" label="play"></button>
+        <button class="shuffle media-button" label="play"></button>
       </div>
-    </div>
-  </div>  
+      <div class="slider">
+        <input type="range" value="0" min="0" max="7300" step="1" class="seek-bar">
+      </div>
+    </div>   
+  </div>
+
 </body>
 </html>
