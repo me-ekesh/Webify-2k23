@@ -12,32 +12,43 @@
   <div class="container">
     <div class="side-nav">
       <a href="#" class="logo">
-        <img src="logo.png" alt="logo" class="logo-img">
+        <img src="music.png" alt="logo" class="logo-img">
       </a>
       <ul class="nav-links">
-        <li><a href="#"><p>Home</p></a></li>
-        <li><a href="#"><p>Trends</p></a></li>
-        <li><a href="#"><p>Feed</p></a></li>
-        <li><a href="#"><p>New and Notable</p></a></li>
-        <li><a href="#"><p>Release Calendar</p></a></li>
-        <li><a href="#"><p>Events</p></a></li>
-        <li><a href="#"><p>FavoriteSongs</p></a></li>
-        <li><a href="#"><p>Artist</p></a></li>
-        <li><a href="#"><p>Album</p></a></li>
+        <li><a href="#"><p><img src="home.png">&nbsp;&nbsp;&nbsp; Home</p></a></li>
+        <li><a href="#"><p><img src="trending.png"> &nbsp;&nbsp;&nbsp;Trends</p></a></li>
+        <li><a href="#"><p><img src="web-content.png"> &nbsp;&nbsp;&nbsp;Feed</p></a></li>
+        <li><a href="#"><p><img src="apps.png"> &nbsp;&nbsp;&nbsp;New and Notable</p></a></li>
+        <li><a href="#"><p><img src="calendar.png"> &nbsp;&nbsp;&nbsp;Release Calendar</p></a></li>
+        <li><a href="#"><p><img src="event.png"> &nbsp;&nbsp;&nbsp;Events</p></a></li>
+        <li><a href="#"><p><img src="love.png"> &nbsp;&nbsp;&nbsp;FavoriteSongs</p></a></li>
+        <li><a href="#"><p><img src="multiple-users-silhouette.png"> &nbsp;&nbsp;&nbsp;Artist</p></a></li>
+        <li><a href="#"><p><img src="star.png"> &nbsp;&nbsp;&nbsp;Album</p></a></li>
         <div class="active"></div>
       </ul>
     </div>
+    <button class="arrow-button" id="left-arrow"><img src="left-arrow.png"></button>
+    <button class="arrow-button" id="left-arrow"><img src="left-arrow.png"></button>
+
     <div class="search-bar">
-      <form action="">
-        <button type=""><img src="Images/search.png"></button>
-        <input type="text" placeholder="search Music / Artist">
+      <form action="" class="search-bar-input">
+        <button type=""><img src="search.png"></button>
+        <input type="text" placeholder="Search Music or Artist..">
       </form>  
-    </div>
+    </div> 
     <div class="music-controls">
-      <div class="slider">
-        <input type="range" value="0" min="0" max="300" step="1" class="seek-bar">
+      <div class="media-buttons">
+        <button class="rewind-button media-button" label="rewind"></button>
+        <button class="play-button media-button" label="play"></button>
+        <button class="fast-forward-button media-button" label="fast forward"></button>
+        <button class="Repeat media-button" label="play"></button>
+        <button class="shuffle media-button" label="play"></button>
       </div>
-    </div>
-  </div>  
+      <div class="slider">
+        <input type="range" value="0" min="0" max="7300" step="1" class="seek-bar">
+      </div>
+    </div>   
+  </div>
+
 </body>
 </html>
