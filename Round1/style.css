@@ -5,15 +5,14 @@
 
 .navbar{
   width: 100%;
-  height: 4rem;
-  /* margin: auto; */
+  height: 10vh;
   background-color: #100028;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .navbar icon{
-  width:100%;
+  width:20%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -21,20 +20,53 @@
 }
 
 .navbar menu{
-  width: 100%;
+  width: 60%;
   height: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
+.elements{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.elements li{
+  list-style: none;
+  position: relative;
+  margin-left: 6rem;
+}
+.elements li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight:500;
+  transition: 0.4s ease-in-out;
+}
+.elements li a::after{
+  content: '';
+  width: 0;
+  height: 0.1rem;
+  background-color:aqua;
+  margin: auto;
+  display: block;
+}
+.elements li a:hover::after{
+  width: 100%;
+  transition: width 0.1s linear;
+}
+.elements li.active a::after{
+  width: 100%;
+  transition: width 0.1s linear;
+}
+.dropdown{
+  z-index: 800;
+}
 
 .menu ul li ul{
   display:none;
   position:absolute;
   background-color:darkblue;
-  /*border-radius: 0px 0px 5px 5px;*/
 }
 .menu ul li:hover ul{
   display: block;
@@ -50,7 +82,7 @@
 }
 
 .socialtop {
-  width: 17rem;
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +90,7 @@
 .socialtop a i{
   color: #fff;
   font-size: 0.9rem;
-  padding-left: 0.3rem;
+  padding: 0.1rem;
   transition: 0.3s ease;
 }
 .socialtop a i:hover{
@@ -128,90 +160,94 @@
 /*image collage*/
 .image-collages
 {
-   width: 100%;
-    height: 100vh;
+    width: 100%;
+    /* height: 100vh; */
     background-color: #100028;
-    display: flex;
+   
 }
-.grid{
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  max-width: 100%;
-  height: 100%;
-  grid-gap: 1.2rem;    
 
+.grid
+{
+ display:grid;
+ grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  /* height: 100%; */
+  /* grid-gap: .9rem;    */
 }
 .grid-item1{
-  background-size: cover;
-  background-position: center;
-  grid-column-start:1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row: 1/2;
+  grid-column:1/3;
+
 }
+
 .grid-item2{
-  background-size: cover;
-  background-position: center;
-  grid-column-start:3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row: 1/2;
+  grid-column:3/4;
 }
 .grid-item3{
-  background-size: cover;
-  background-position: center;
-  grid-column-start:4;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row: 1/2;
+  grid-column:4/5;
 }
 .grid-item4{
-  background-size: cover;
-  background-position: center;
-  grid-column-start:5;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row: 1/3;
+  grid-column:5/7;
 }
 .grid-item5{
-  background-size: cover;
-  background-position: center;
-  grid-column-start:1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row: 2/3;
+  grid-column:1/2;
 }
 .grid-item6{
-  background-size: cover;
-  background-position: center;
-  grid-column-start:2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row: 2/3;
+  grid-column:2/3;
 }
 .grid-item7{
-  background-size: cover;
-  background-position: center;
-  grid-column-start:3;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row: 2/3;
+  grid-column:3/5;
 }
 
+.grid-item1 img{
+  width:100%;
+  height:100%;
+}
 
+.grid-item2 img{
+  width:100%;
+  height:100%;
+}
+.grid-item3 img{
+  width:100%;
+  height:100%;
+}
+.grid-item4 img{
+  width:100%;
+  height:100%;
+}
+.grid-item5 img{
+  width:100%;
+  height:100%;
+}
+.grid-item6 img{
+  width:100%;
+  height:100%;
+}
+.grid-item7 img{
+  width:100%;
+  height:100%;
+}
 /* team section*/
 .team{
   width: 100%;
   background:url(./img/team-bg.jpg);
   display: flex;
-  height: 100vh; 
+  height: 100%; 
 }
-.container{
+.team-main-container{
   width: 100%;
   display: flex;
   justify-content:center;
   position: relative;
+  padding-bottom:3rem ;
 }
 .text span{
   position: absolute;
@@ -235,10 +271,15 @@
   top: 85%;
   letter-spacing: 0.2rem;
 }
+
+.top-social{
+  display: flex;
+  justify-content: space-between;
+}
 .top-social a{
   color: #fff;
   font-size: 0.9rem;
-  padding-left: 0.9rem;
+  padding: 0.5rem;
 }
 .box1{
   width: auto;
@@ -258,6 +299,9 @@
 }
 .content{
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -268,7 +312,7 @@
     width: 100%;
     height: 100vh;
     background-color: #100028;
-    display: flex;
+    display:flex;
 }
 .blog-text{
   width: 100%;
@@ -285,18 +329,22 @@
     margin-bottom: 0.625rem;
 }
 .bar hr{
-  width:4.375rem;
-  height:0.3125rem;
+  
+  width:100%;
+  height:5px;
   background-color: #03BFE7;
   border-style:none;
 
-}
 
+}
+.scrolling-cards{
+  
+}
 .blog-text h2{
     color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
-    padding-bottom: 7%;
+    padding-bottom: 4%;
 }
 .ideas-background{
   width: 100%;
