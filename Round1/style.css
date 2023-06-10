@@ -5,15 +5,14 @@
 
 .navbar{
   width: 100%;
-  height: 4rem;
-  /* margin: auto; */
+  height: 10vh;
   background-color: #100028;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .navbar icon{
-  width:100%;
+  width:20%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -21,7 +20,7 @@
 }
 
 .navbar menu{
-  width: 100%;
+  width: 60%;
   height: 0;
   display: flex;
   justify-content: center;
@@ -37,7 +36,6 @@ ul li{
   list-style: none;
   position: relative;
   margin-left: 6rem;
-  /*font-size: 15px;*/
 }
 ul li a{
   text-decoration: none;
@@ -61,12 +59,14 @@ ul li.active a::after{
   width: 100%;
   transition: width 0.1s linear;
 }
+.dropdown{
+  z-index: 800;
+}
 
 .menu ul li ul{
   display:none;
   position:absolute;
   background-color:darkblue;
-  /*border-radius: 0px 0px 5px 5px;*/
 }
 .menu ul li:hover ul{
   display: block;
@@ -82,7 +82,7 @@ ul li.active a::after{
 }
 
 .socialtop {
-  width: 17rem;
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +90,7 @@ ul li.active a::after{
 .socialtop a i{
   color: #fff;
   font-size: 0.9rem;
-  padding-left: 0.3rem;
+  padding: 0.1rem;
   transition: 0.3s ease;
 }
 .socialtop a i:hover{
@@ -237,13 +237,14 @@ ul li.active a::after{
   width: 100%;
   background:url(./img/team-bg.jpg);
   display: flex;
-  height: 100vh; 
+  height: 100%; 
 }
-.container{
+.team-main-container{
   width: 100%;
   display: flex;
   justify-content:center;
   position: relative;
+  padding-bottom:3rem ;
 }
 .text span{
   position: absolute;
@@ -267,10 +268,15 @@ ul li.active a::after{
   top: 85%;
   letter-spacing: 0.2rem;
 }
+
+.top-social{
+  display: flex;
+  justify-content: space-between;
+}
 .top-social a{
   color: #fff;
   font-size: 0.9rem;
-  padding-left: 0.9rem;
+  padding: 0.5rem;
 }
 .box1{
   width: auto;
@@ -290,6 +296,9 @@ ul li.active a::after{
 }
 .content{
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
