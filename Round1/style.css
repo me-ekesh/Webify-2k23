@@ -97,16 +97,19 @@
   color: aqua;
 }
 
-
+.hero-main-container{
+  width: 100%;
+}
 /* hero section */
 .hero-main-image{
     display: flex;
     width: 100%;
+    height: 100%;
     position: relative;
 }
 
 .hero-main-image img{
-    width: 78rem;
+    width: 100%;
     height: 100vh;
 }
 
@@ -156,6 +159,25 @@
     width: 30%;
     height: 75%;
     display: flex;
+    padding: 0rem 1rem;
+}
+
+.services-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.content-2{
+  height: 100%;
+  padding: 0rem 1rem;
+}
+.services-heading{
+  padding: 1rem 0rem;
+}
+.content-1{
+  height: 50%;
 }
 /*image collage*/
 .image-collages
@@ -323,10 +345,10 @@
 .blog-text span{
     color: #ffffff;
     display: block;
-    font-size: 16px;
-    letter-spacing: 2px;
+    font-size: 1rem;
+    letter-spacing: 0.125rem;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .bar hr{
   
@@ -354,8 +376,8 @@
 }
 .ideas-container{
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375;
     margin-right: auto;
     margin-left: auto;
 }
@@ -366,43 +388,35 @@
 }
 .ideas-text h2{
     color: #ffffff;
-    font-size: 42px;
+    font-size: 2.625rem;
     font-weight: 700;
-    line-height: 55px;
-    margin-bottom: 22px;
+    line-height: 3.4375rem;
+    margin-bottom: 1.375rem;
 }
 .ideas-text p{
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: #ffffff;
     opacity: 0.7;
     text-transform: uppercase;
-    margin-bottom: 55px;
+    margin-bottom: 3.4375rem;
     
 }
 .ideas-text a {
     color: #ffffff;
     background: #00bfe7;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 700;
     font-family: "Play", sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
     text-transform: uppercase;
     display: inline-block;
-    padding: 14px 32px 12px;
->>>>>>> 562a8753dcdbcb4f8e586129966d9223e50f2eec
+    padding: 0.875rem 2rem 0.75rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-body{
-    line-height: 1.5;
-    font-family: 'Roboto', sans-serif;
-}
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-.container{
+
+
+.footer-container{
     /* max-width: 1170px; */
     width: 100%;
     display: flex;
@@ -420,14 +434,15 @@ ul{
 }
 .footer{
     background-color: rgb(16, 4, 33);
-     padding: 70px 0;
+     padding: 4.3rem 0;
 }
 .footer-col{
     width: 25%;
-    padding:0 15px;
+
+    /* padding:0 15px; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 }
 
@@ -458,8 +473,8 @@ ul{
     flex-direction: column;
     padding-right: 10%;
 }
-.footer-col-top-social h4{
-    font-size: 18px;
+.footer-col-social-links h4{
+    font-size: 1.1rem;
     color: #ffffff;
     text-transform: capitalize;
     /* margin-bottom: 30px; */
@@ -467,22 +482,22 @@ ul{
     font-weight: 500;
     position: relative;
 }
-.footer-col h4::before
+/* .footer-col h4::before
 {
 content:'';
 position: absolute;
 left:0;
-bottom: -10px;
+bottom: -0.6rem;
 background-color:rgb(13, 51, 155);
-height: 2px;
+height: 0.1rem;
 box-sizing: border-box;
-width: 50px;
-}
+width: 3.1rem;
+} */
 .footer-col ul li:not(:last-child){
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 .footer-col ul li a{
-    font-size: 16px;
+    font-size: 1rem;
     text-transform:capitalize;
     color: #ffffff;
     text-decoration: none;
@@ -490,19 +505,19 @@ width: 50px;
     color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
+    text-align: center;
 }
 .footer-col ul li a:hover{
     color: #ffffff;
-    padding-left: 8px;
 }
 .footer-col-top-social .top-social a{
     display: inline-block;
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: rgba(147, 123, 123, 0.2);
-    margin: 0 10px 10px 0;
+    margin: 0 0.6rem 0.6rem 0;
     text-align: center;
-    line-height: 40px;
+    line-height: 2.5rem;
     border-radius: 50%;
     color: #ffffff;
     transition: all 0.3s ease;
@@ -519,22 +534,27 @@ width: 50px;
 
 .footer-email-form{
     display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 #footer-email{
-    width: 250px;
-    height: 40px;
-    border-radius: 4px;
+    width:50%;
+    
+    border-radius: 0.25rem;
     outline: none;
     border: none;
-    padding-left: 0.5rem;
+    padding: 0.75rem 0.5rem 0.75rem 0.5rem ;
+}
+.footer-email-form button{
+  width: 25%;
 }
 /*responsive*/
-@media(max-width:767px)
+@media(max-width:47.9rem)
   {
     .footer-col{
         width: 25%;
-        margin-bottom: 30px;
+        margin-bottom: 1.8rem;
 
     }
   }
