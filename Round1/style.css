@@ -518,7 +518,8 @@ width: 3.1rem;
 
 #footer-email{
     width:50%;
-    
+    background-color:#00BFE7;
+    color:white;
     border-radius: 0.25rem;
     outline: none;
     border: none;
@@ -526,6 +527,8 @@ width: 3.1rem;
 }
 .footer-email-form button{
   width: 25%;
+  color:black;
+  background-color: #00BFE7;
 }
 /*responsive*/
 @media(max-width:47.9rem)
