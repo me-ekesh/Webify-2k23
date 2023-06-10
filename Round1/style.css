@@ -35,7 +35,7 @@
 .elements li{
   list-style: none;
   position: relative;
-  margin-left: 6rem;
+  margin-left: 4.5rem;
 }
 .elements li a{
   text-decoration: none;
@@ -444,7 +444,7 @@ ul{
     font-weight: 500;
     /* position: relative; */
 }
-.footer-col-social-links{
+.footer-col-top-social{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -458,7 +458,7 @@ ul{
     flex-direction: column;
     padding-right: 10%;
 }
-.footer-col-social-links h4{
+.footer-col-top-social h4{
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
@@ -495,7 +495,7 @@ width: 50px;
     color: #ffffff;
     padding-left: 8px;
 }
-.footer-col-social-links .social-links a{
+.footer-col-top-social .top-social a{
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -507,7 +507,7 @@ width: 50px;
     color: #ffffff;
     transition: all 0.3s ease;
 }
-.footer-col-social-links .social-links a:hover{
+.footer-col-top-social .top-social a:hover{
     color: #b6bac5;
     background-color: #ffffff;
 }
