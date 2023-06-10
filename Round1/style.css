@@ -3,40 +3,32 @@
   padding: 0;
 }
 
-/* .main{
-  width: 100%;
-  background: url(hero-1.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-} */
 .navbar{
-  width: 1300px;
-  height: 75px;
+  width: 100%;
+  height: 4rem;
   /* margin: auto; */
   background-color: #100028;
-  /* background-image:url("./img/hero/hero-1.jpg") ;
-  background-size: cover; */
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.icon{
-  width: 250px;
-  float: left;
-  height: 70px;
-  /* margin-top: 25px; */
+.navbar icon{
+  width:100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.menu{
-  width: 400px;
-  float: left;
-  height: 70px;
+.navbar menu{
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul{
-  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,9 +36,8 @@ ul{
 ul li{
   list-style: none;
   position: relative;
-  margin-left: 62px;
-  margin-top: 30px;
-  font-size: 15px;
+  margin-left: 6rem;
+  /*font-size: 15px;*/
 }
 ul li a{
   text-decoration: none;
@@ -57,7 +48,7 @@ ul li a{
 ul li a::after{
   content: '';
   width: 0;
-  height: 2px;
+  height: 0.1rem;
   background-color:aqua;
   margin: auto;
   display: block;
@@ -75,32 +66,31 @@ ul li.active a::after{
   display:none;
   position:absolute;
   background-color:darkblue;
-  border-radius: 0px 0px 5px 5px;
+  /*border-radius: 0px 0px 5px 5px;*/
 }
 .menu ul li:hover ul{
   display: block;
 }
 .menu ul li ul li{
   line-height: 2;
-  width: 100px;
+  width: 6rem;
   margin:auto;
-  margin-left: 10px;
+  margin-left: 0.6rem;
 }
 .menu ul li ul li a:hover{
   color: aqua;
 }
 
 .socialtop {
-  width: 150px;
-  float: right;
-  margin-right: 62px;
-  margin-top: 27px;
+  width: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }   
 .socialtop a i{
   color: #fff;
-  font-size: 15px;
-  padding-left: 14px;
-  padding-top: 5px;
+  font-size: 0.9rem;
+  padding-left: 0.3rem;
   transition: 0.3s ease;
 }
 .socialtop a i:hover{
@@ -243,40 +233,68 @@ ul li.active a::after{
 
 
 /* team section*/
-.background{
+.team{
   width: 100%;
   background:url(./img/team-bg.jpg);
-  background-position: center; 
-  background-size: cover; 
+  display: flex;
   height: 100vh; 
 }
 .container{
   width: 100%;
-  margin: 100px auto;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content:center;
+  position: relative;
+}
+.text span{
+  position: absolute;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  left: 12%;
+  top: 10%;
+}
+.text h1{
+  position: absolute;
+  color: #fff;
+  left: 12%;
+  top: 15%;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+.meet{
+  color: #fff;
+  position: absolute;
+  left: 77%;
+  top: 85%;
+  letter-spacing: 0.2rem;
+}
+.top-social a{
+  color: #fff;
+  font-size: 0.9rem;
+  padding-left: 0.9rem;
 }
 .box1{
-  width: 17rem;
-  margin: 0 10px;
+  width: auto;
   margin-top: 15rem;
 }
 .box2{
-  width: 17rem;
-  margin: 0 10px;
+  width: auto;
   margin-top: 12rem;
 }
 .box3{
-  width: 17rem;
-  margin: 0 10px;
+  width: auto;
   margin-top: 9rem;
 }
 .box4{
-  width: 17rem;
-  margin: 0 10px;
+  width: auto;
   margin-top: 6rem;
 }
+.content{
+  color: #fff;
+}
+
+
+
+
 .blog-container
 {
     width: 100%;
@@ -355,6 +373,7 @@ ul li.active a::after{
     text-transform: uppercase;
     display: inline-block;
     padding: 14px 32px 12px;
+>>>>>>> 562a8753dcdbcb4f8e586129966d9223e50f2eec
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
