@@ -287,11 +287,17 @@
   letter-spacing: 0.1rem;
 }
 .meet{
-  color: #fff;
   position: absolute;
-  left: 77%;
+  left: 75%;
   top: 85%;
   letter-spacing: 0.2rem;
+}
+.meet a{
+  position: relative;
+  padding: 0.8rem 1.7rem;
+  border: 0.1rem solid #03BFE7;
+  text-decoration: none;
+  color: #fff;
 }
 
 .top-social{
