@@ -389,7 +389,7 @@
 .card-container{
     color: #ff80;
     width: 26%;
-    height: 80%;
+    height: 95%;
     display: flex;
     padding: 0rem 1rem;
 
@@ -425,7 +425,7 @@
   width: 100%;
   background:url(./img/callto-bg.jpg);
   background-position: center; 
-  height: 55vh; 
+  height: 61.5vh; 
 }
 .ideas-container{
     max-width: 100%;
