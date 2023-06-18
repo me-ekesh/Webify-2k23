@@ -198,9 +198,11 @@ body {
   right: 41%;
   background-color: transparent;
   position: fixed;
-  top: 25%;
+  top: 28%;
   transform: translateY(50%);
 }
+
+
 
 .seek-bar{
   width: 160%;

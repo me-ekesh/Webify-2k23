@@ -1,5 +1,5 @@
-const image = document.querySelector("#play-button");
+const imageElement = document.querySelector(".media-buttons img");
 
-function changeToPause(){
-  image.setAttribute("src", "Images/pause-solid.svg");
-}
+imageElement.addEventListener("click", function() {
+  imageElement.src = "Images/Pause.png";
+});
