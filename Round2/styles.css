@@ -228,12 +228,12 @@ body {
 }
 
 .slider {
-  width: 45%;
+  width: 55%;
   align-items: center;
-  right: 41%;
+  right: 38%;
   background-color: transparent;
   position: fixed;
-  top: 28%;
+  bottom: 1rem;
   transform: translateY(50%);
 }
 
@@ -373,8 +373,9 @@ body {
 
 #play-button{
   width: 16px;
-  padding-bottom: 12px;
-  padding-left: 15.3rem;
+  padding-top: 2px;
+  top: .5rem;
+  padding-left: 18.7rem;
   cursor: pointer;
   z-index: 1;
   position: fixed;
@@ -382,6 +383,7 @@ body {
 
 #rewind-button{
   width: 16px;
+  top: .6rem;
   padding-left: 13.4rem;
   cursor: pointer;
   z-index: 1;
@@ -391,6 +393,7 @@ body {
 #forward-button{
   width: 16px;
   padding-left: 23.4rem;
+  padding-bottom: .01rem;
   cursor: pointer;
   z-index: 1;
   position: fixed;
@@ -398,7 +401,8 @@ body {
 
 #repeat-button{
   width: 15px;
-  padding-left: 8.4rem;
+  top: .7rem;
+  padding-left: 8rem;
   cursor: pointer;
   z-index: 1;
   position: fixed;
