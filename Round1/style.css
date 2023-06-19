@@ -1,9 +1,17 @@
-/*@font-face
+@font-face
 {
-  font-family: myFont;
+  font-family: 'myFont';
   src:url()
   
-}*/
+}
+
+@font-face
+{
+  font-family: 'myFont';
+  src:url()
+  
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -764,7 +772,7 @@ width: 3.1rem;
 .footer-email-form button{
   width: 25%;
   color:white;
-  background-color: #00BFE7;
+  background-color: #386e79;
 }
 /*responsive*/
 @media(max-width:47.9rem)
