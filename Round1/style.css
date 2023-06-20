@@ -820,6 +820,7 @@ ul{
     color: #ffffff;
     text-transform: capitalize;
     font-weight: 500;
+    height:3rem;
     /* position: relative; */
 }
 .footer-col-top-social{
@@ -836,6 +837,21 @@ ul{
     flex-direction: column;
     padding-right: 10%;
     margin: 1rem 0rem;
+    
+}
+.footer-link-container h4{
+  width: 11rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0rem;
+  
+}
+.social-links a{
+   padding: 0rem 0.5rem;
+}
+
+.footer-col-social-links{
+  height: 5rem;  
 }
 .footer-col-social-links h4{
     font-size: 1.1rem;
@@ -904,26 +920,31 @@ width: 3.1rem;
     width: 100%;
     justify-content: space-around;
     color: black;
-
+    padding: 1rem 0rem;
 }
 
 #footer-email{
     width:50%;
-    background-color:#00BFE7;
-    color:white;
+    background-color:#ebf2f4;
+    color:rgb(11, 10, 10);
     border-radius: 0.25rem;
     outline: none;
     border: none;
     padding: 0.75rem 0.5rem 0.75rem 0.5rem ;
 }
 ::placeholder{
-  color: whitesmoke;
+  color: rgb(11, 11, 11);
 }
 .footer-email-form button{
   width: 25%;
-  color:white;
-  background-color: #00BFE7;
+  color:rgb(16, 15, 15);
+  background-color: #edeeef;
+  border-radius: 0.25rem;
+    outline: none;
+    border: none;
+    padding: 0.75rem 0.5rem 0.75rem 0.5rem ;
 }
+
 /*responsive*/
 @media(max-width:47.9rem)
   {
