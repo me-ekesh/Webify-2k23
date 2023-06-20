@@ -603,7 +603,7 @@ height: 50%;
 .text span{
   position: absolute;
   letter-spacing: 0.1rem;
-  left: 12%;
+  left: 12.3%;
   top: 10%;
 }
 .text span p{
@@ -617,21 +617,69 @@ height: 50%;
   font-size: 2.5rem;
   font-weight: 600;
 }
+.text h1::after{
+  content: '';
+  background-color: #00BFE7;
+  position: absolute;
+  height: 0.25rem;
+  width: 5.5rem;
+  bottom: -1rem;
+  left: 0.2rem;
+  }
+
 .meet{
   position: absolute;
   left: 77%;
   top: 88%;
   letter-spacing: 0.2rem;
 }
-.meet a{
-  position: relative;
-  padding: 0.8rem 1.7rem;
-  border: 0.1rem solid #03BFE7;
-  text-decoration: none;
-  color: #fff;
+.meet button{
   font-family: "Play", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 600;
+  background: none;
+  border: none;
+}
+.team-button{
+    cursor: pointer;
+    background:none;
+    border: none;
+    font-size: .9rem;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.3rem;
+}
+button.team-button{
+  padding: 1rem;
+  border:none;
+  position: relative;
+  background-color: transparent;
+ }
+ button.team-button::before{
+  position: absolute;
+  content:'';
+  border-top: #00bfe7 solid 2px;
+  border-left: #00bfe7 solid 2px;
+  width: 10%;
+  height:30%;
+  top:-3px;
+  left:-3px;
+  transition:0.3s all ease-in-out
+}
+button.team-button::after{
+  position: absolute;
+  content:'';
+  border-bottom: #00bfe7 solid 2px;
+  border-right: #00bfe7 solid 2px;
+  width: 10%;
+  height:30%;
+  bottom:-3px;
+  right:-3px;
+  transition:0.5s all ease-in-out
+}
+button.team-button:hover::before,
+button.team-button:hover::after{
+  width:101.5%;
+  height:105%
 }
 
 .top-social{
