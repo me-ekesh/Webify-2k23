@@ -277,6 +277,25 @@ height: 2.5rem;
 width: 2.5rem;
 /* border: #00BFE7 0.1rem solid; */
 }
+
+.content-1-icon{
+  height: 70px;
+  width: 70px;
+  position: relative;
+}
+
+.content-1-icon::before{
+  content:"";
+  width: 100%;
+  height:100%;
+  border: #00BFE7 0.1rem solid ;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.content-1-icon:hover::before{
+  transform:rotate(-45deg);
+}
 .services-img-container{
   border: #00BFE7 0.1rem solid;
     width: 20%;
@@ -293,12 +312,13 @@ transform: none;
 .services-img-container::after{
   width: 100%;
   height: 100%;
-  border: #00BFE7 0.1rem solid;
+  border: #00BFE7 0.08rem solid;
   transform: rotate(45deg);
 }
 .content-1 h3{
-font-size: 1.5rem;
-font-weight: 700;
+  padding-top:1.5rem;
+ font-size: 1.5rem;
+ font-weight: 700;
 }
 .content-1 p{
 color: #adadad;
@@ -765,7 +785,6 @@ height: 50%;
     align-items: center;
     background-color:rgb(16, 4, 33);
     margin:auto;
-    
 }
 .row{
     display: flex;
@@ -787,16 +806,7 @@ ul{
     justify-content: flex-start;
     align-items: center;
 }
-.social-links{
-  width: 12rem;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social-links a{
-    padding: 0rem 0.5rem;
-}
+
 .footer-list-items{
   display: flex;
   flex-direction: column;
@@ -810,7 +820,6 @@ ul{
     color: #ffffff;
     text-transform: capitalize;
     font-weight: 500;
-    height:3rem;
     /* position: relative; */
 }
 .footer-col-top-social{
@@ -828,13 +837,6 @@ ul{
     padding-right: 10%;
     margin: 1rem 0rem;
 }
-.footer-link-container h4{
-  width:12rem;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .footer-col-social-links h4{
     font-size: 1.1rem;
     color: #ffffff;
@@ -843,7 +845,6 @@ ul{
     /*i have commented the above line */
     font-weight: 500;
     position: relative;
-    
 }
 /* .footer-col h4::before
 {
@@ -903,31 +904,25 @@ width: 3.1rem;
     width: 100%;
     justify-content: space-around;
     color: black;
-    padding: 2rem 1rem;
 
 }
 
 #footer-email{
     width:50%;
-    background-color:#eff5f6;
-    color:rgb(14, 14, 14);
+    background-color:#00BFE7;
+    color:white;
     border-radius: 0.25rem;
     outline: none;
     border: none;
     padding: 0.75rem 0.5rem 0.75rem 0.5rem ;
 }
 ::placeholder{
-  color: rgb(8, 8, 8);
+  color: whitesmoke;
 }
 .footer-email-form button{
   width: 25%;
-  color:rgb(6, 6, 6);
-  background-color: #e1eaec;
-  border-radius:0.25rem;
-  outline: none;
-  border: none;
-  padding:0.75rem 0.5rem 0.75rem 0.5rem  ;
-
+  color:white;
+  background-color: #00BFE7;
 }
 /*responsive*/
 @media(max-width:47.9rem)
