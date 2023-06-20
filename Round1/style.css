@@ -195,6 +195,7 @@ p {
     width: 30%;
     letter-spacing: 0.2rem;
     line-height: 4rem;
+    padding-bottom: 50px;
 }
 
 .hero-main-text button{
@@ -202,7 +203,7 @@ p {
   font-weight: 700;
 
     background: none;
-    height: 5rem;
+    /* height: 5rem; */
     border: none;
 }
 .hero-button{
@@ -214,6 +215,42 @@ p {
     text-decoration: none;
     letter-spacing: 0.3rem;
 }
+button.hero-button{
+  padding: 1rem;
+  border:none;
+  position: relative;
+  background-color: transparent;
+ }
+ 
+ button.hero-button::before{
+   position: absolute;
+   content:'';
+   border-top: #00bfe7 solid 2px;
+   border-left: #00bfe7 solid 2px;
+   width: 10%;
+   height:30%;
+   top:-3px;
+   left:-3px;
+   transition:0.3s all ease-in-out
+ 
+ }
+ button.hero-button::after{
+   position: absolute;
+   content:'';
+   border-bottom: #00bfe7 solid 2px;
+   border-right: #00bfe7 solid 2px;
+   width: 10%;
+   height:30%;
+   bottom:-3px;
+   right:-3px;
+   transition:0.5s all ease-in-out
+ }
+ 
+ button.hero-button:hover::before,
+ button.hero-button:hover::after{
+   width:101.5%;
+   height:105%
+ }
 /* Services container */
 .services-main-container{
   width: 100%;
@@ -266,7 +303,7 @@ left: 2.3rem;
 }
 .services-content button{
 padding: 1rem;
-border: #00BFE7 0.1rem solid;
+/* border: #00BFE7 0.1rem solid; */
 }
 .content-1-image{
 height: 30%;
@@ -294,7 +331,7 @@ width: 2.5rem;
 }
 
 .content-1-icon:hover::before{
-  transform:rotate(-45deg);
+  transform:rotate(45deg);
 }
 .services-img-container{
   border: #00BFE7 0.1rem solid;
