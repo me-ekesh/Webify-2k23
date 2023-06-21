@@ -772,43 +772,41 @@ button.team-button:hover::after{
   border-style: none;
 }
 .blog-cards{
-  padding:2%; 
-  height:70%;
-  max-width:100%;
+  padding:2rem; 
+  width:100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content:center;  
+  align-items: center;
 
 }
 .card-container{
     color: #ff80;
     width: 26%;
-    height: 95%;
     display: flex;
     padding: 0rem 1rem;
 
 }
 .card1{
-  max-height:100%; 
   width:100%;
   padding:2%;
   border-style: solid;
   border:2px solid #222222;
-;
 }
 .card1 h4{
     color: #ffffff;
     font-size: 1.625rem;  
     font-weight: 700;
-    line-height: 3.4375rem;
-    margin-bottom: 1.375rem;
+    line-height: 1.6;
+    padding-bottom: 1.375rem;
 
 }
 .card1 p{
-     font-size: 0.9375rem;
+    font-size: 0.9375rem;
     color: #ffffff;
     opacity: 0.7;
     text-transform: uppercase;
-    margin-bottom: 3.4375rem;
+    padding-bottom: 3.5rem;
 
 }
 
@@ -818,7 +816,8 @@ button.team-button:hover::after{
   width: 100%;
   background:url(./img/callto-bg.jpg);
   background-position: center; 
-  height: 61.5vh; 
+  height:63vh; 
+  background-repeat: repeat;
 }
 .ideas-container{
     max-width: 100%;
