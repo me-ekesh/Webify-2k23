@@ -883,7 +883,8 @@ ul{
 }
 .footer{
     background-color: rgb(16, 4, 33);
-     padding: 2.3rem 0;
+     padding-top: 0.2rem ;
+     padding-bottom: 0.5rem;
 }
 .footer-col{
     width: 25%;
@@ -901,10 +902,10 @@ ul{
   justify-content: center;
   align-items: center;
   line-height: 1.6rem;
-  
+
 }
 .footer-col h4{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #ffffff;
     text-transform: capitalize;
     font-weight: 500;
@@ -949,6 +950,7 @@ ul{
     /*i have commented the above line */
     font-weight: 500;
     position: relative;
+    /* padding-top: 10%; */
 }
 /* .footer-col h4::before
 {
@@ -965,7 +967,7 @@ width: 3.1rem;
     margin-bottom: 0.6rem;
 }
 .footer-col ul li a{
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-transform:capitalize;
     color: #ffffff;
     text-decoration: none;
