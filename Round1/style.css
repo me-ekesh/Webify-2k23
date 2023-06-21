@@ -264,7 +264,7 @@ button.hero-button{
 .services-sub-container{
   color: #ffff;
   width: 30%;
-  height: 75%;
+  height: 95%;
   display: flex;
   padding: 0rem 1rem;
 }
@@ -279,10 +279,16 @@ align-items: center;
 height: 100%;
 /* margin: 0 1rem; */
 }
-.content-2 h1{
-height: 15%;
-font-size: 2.3rem;
-font-weight: 700;
+
+.content-2 h2{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.content-2 h3{
+height: 8%;
+font-size: 1.4rem;
+font-weight: 200;
+letter-spacing: 0.2rem;
 }
 .content-2 p{
 color: #adadad;
@@ -291,14 +297,16 @@ letter-spacing: 0.05rem;
 height: 30%;
 font-weight: 700;
 }
-.content-2 h1::after{
+.content-2 h3::after{
 content: '';
 background-color: #00BFE7;
 position: absolute;
-height: 0.3rem;
-width: 5rem;
-bottom: -17rem;
-left: 2.3rem;
+height: 0.2rem;
+width: 8rem;
+bottom: -22%;
+left: 2.5%;
+/* bottom: -17rem; */
+/* left: 2.3rem; */
 
 }
 .services-content button{
@@ -1039,12 +1047,18 @@ width: 3.1rem;
 }
 
 /*responsive*/
-@media(max-width:47.9rem)
+/* @media(max-width:47.9rem)
   {
     .footer-col{
         width: 25%;
         margin-bottom: 1.8rem;
 
     }
-  }
+  } */
 
+  @media only screen and (max-width: 950px) and (min-width: 750px)
+  {
+     .content-1 h3{
+        font-size: 1.2rem;
+      }
+}
