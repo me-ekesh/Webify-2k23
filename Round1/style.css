@@ -772,13 +772,11 @@ button.team-button:hover::after{
   border-style: none;
 }
 .blog-cards{
-  padding:2rem; 
   width:100%;
   display: flex;
   flex-wrap: wrap;
   justify-content:center;  
   align-items: center;
-
 }
 .card-container{
     color: #ff80;
