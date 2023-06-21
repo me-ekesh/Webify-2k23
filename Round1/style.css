@@ -901,6 +901,12 @@ ul{
   line-height: 1.6rem;
 
 }
+
+.footer-read-more-icon{
+  display: flex;
+  justify-content: center;
+  
+}
 .footer-col h4{
     font-size: 1.3rem;
     color: #ffffff;
