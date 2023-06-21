@@ -910,10 +910,20 @@ ul{
 
 }
 
-.footer-read-more-icon{
+.footer-list-items a{
   display: flex;
   justify-content: center;
+  align-items: center;
   
+}
+
+.footer-arrow h4{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-col img{ 
+  width:2rem;
 }
 .footer-col h4{
     font-size: 1.3rem;
