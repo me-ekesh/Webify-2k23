@@ -1,0 +1,95 @@
+
+
+body : font-family{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+navigation-links{
+color: #0d0d0d
+}
+
+navigation-links : hover{
+color: rgb(13,13,13,0.9)
+}
+
+hero-section{
+background-color: #f4f5fef1;
+}
+
+search-bar{
+background-color: rgb(255, 255, 255);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+border-radius: 30px;
+}
+
+search-bar input {
+  background: white;
+  color: #000000;
+ }
+
+search-bar input::placeholder{
+  color: rgb(166,166,166,0.75);
+}
+
+what's Hot{
+  color:rgb(115,115,115);
+}
+
+My-playlist{
+  color: #1a1a1a;
+}
+
+image{
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+gradient-overlay{
+   background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #f4f5feab);
+}
+
+Artist{
+    color: rgb(62, 62, 62);
+}
+
+on-Top-Of -The-World{
+  color: rgb(0, 0, 0);
+}
+
+monthly-listners{
+  color: rgb(211, 211, 211);
+}
+
+39092{
+  color: rgb(217, 216, 216);
+}
+
+play-follow-buttons{
+    background-color: #0a0000;
+  color: #fff;
+}
+
+invisible-table th {
+  color: #b8b4b4;
+}
+
+invisible-table td {
+  color: #5b5959;
+}
+
+invisible-table tr {
+  #5b5959;
+}
+
+table:hover {
+  background-color: white;
+box-shadow:  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+music-controls{
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+slider input[type="range"]{
+  color: #0a0000;
+}
